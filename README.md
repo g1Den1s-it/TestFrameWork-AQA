@@ -1,7 +1,7 @@
 List of artifacts in your framework:
    - DriverPool for multiple drivers (at least chrome and firefox) + need to test it
-   - PageObject architecture with TC->BO->PO layers (for API - TC-BO) (Task_11)
-   - PageFactory and WebElement Wrappers (Task_12)
+   - PageObject architecture with TC->BO->PO layers (for API - TC-BO) (Task_11) +
+   - PageFactory and WebElement Wrappers (Task_12) -+
    - DataProvider (Task_8)
    - Hibernate for setting, getting test data and DB validation or saving test results.
    - At least 3 end-to-end WEB UI test scenarios (could be Login + Task_19) (Task_11)
