@@ -5,16 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef48178c-45c4-4d34-ba76-7bb8ecb5348b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/UI/bo/ProfileBo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/UI/po/AlbumPageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/UI/po/MusicPageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/UI/po/ProfilePageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/UI/wrappers/Element.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/UI/bo/UserBo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/UI/po/LoginPageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/hibernate/HibernateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/properties.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/framework/UI/bo/LoginBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/framework/UI/bo/LoginBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/framework/UI/bo/ProfileBo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/framework/UI/po/AlbumPageObject.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/framework/UI/po/HomePageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/framework/UI/po/HomePageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/framework/UI/po/MusicPageObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/framework/UI/po/ProfilePageObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/framework/UI/wrappers/Element.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/framework/UI/wrappers/Element.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/maven/archetype.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/archetype-resources/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/main/java/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/test/java/AppTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/UITest/WebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UITest/WebTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +61,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
@@ -81,7 +90,7 @@
       <workItem from="1683565302324" duration="2350000" />
       <workItem from="1683647621170" duration="3422000" />
       <workItem from="1683914993004" duration="4654000" />
-      <workItem from="1683966973117" duration="9491000" />
+      <workItem from="1683966973117" duration="22084000" />
     </task>
     <servers />
   </component>
