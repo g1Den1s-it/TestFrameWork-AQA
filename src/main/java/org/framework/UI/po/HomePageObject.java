@@ -2,8 +2,10 @@ package org.framework.UI.po;
 
 import org.framework.UI.wrappers.Decorator;
 import org.framework.UI.wrappers.Element;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import static org.framework.Drivers.DriverHelper.driver;
 
@@ -28,6 +30,10 @@ public class HomePageObject {
     private Element like;
     @FindBy(xpath = "//div[@class=\"JUa6JJNj7R_Y3i4P8YUX\"]/div/li[1]//button[@class=\"RowButton-sc-xxkq4e-0 iQutdu\"]")
     private Element likesSongs;
+    @FindBy(xpath = "//button[@class=\"Button-sc-1dqy6lx-0 drEYjZ encore-over-media-set Fxnb0xe6bL7I7W8V0p6C\"]")
+    private Element profileButton;
+    @FindBy(xpath = "//div[@class=\"RP2rRchy4i8TIp1CTmb7\"]")
+    private Element likesSongsDiv;
 
     public HomePageObject() {
         if (!URL.equals(driver.getCurrentUrl())){
@@ -57,7 +63,10 @@ public class HomePageObject {
         Thread.sleep(2000);
         likesSongs.getWebElementAndWait().click();
     }
-//    public boolean isLogin(){
-//
-//    }
+    public boolean isLogin(){
+        return profileButton.getWebElement().isDisplayed();
+    }
+    public boolean isLikesSongs(){
+        return likesSongsDiv.getWebElementAndWait().isDisplayed();
+    }
 }

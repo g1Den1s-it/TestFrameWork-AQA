@@ -2,12 +2,16 @@ package UITest;
 
 
 import org.framework.Drivers.DriverHelper;
+import org.framework.Listeners.AllureListener;
 import org.framework.UI.bo.LoginBO;
 import org.framework.UI.bo.UserBo;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+
+@Listeners({AllureListener.class})
 public class WebTest {
 
     @BeforeTest
