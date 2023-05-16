@@ -1,5 +1,8 @@
 package org.framework.api.bo;
 
+import org.framework.api.elements.comment.Comment;
+import org.framework.api.elements.comment.GetCommentRequest;
+import org.framework.api.elements.comment.GetCommentResponse;
 import org.framework.api.elements.manga.GetMangaResponse;
 import org.framework.api.elements.registration.RegistrationUserRequest;
 import org.framework.api.elements.registration.RegistrationUserResponse;
@@ -36,14 +39,20 @@ public class MangaBO {
         return getMangaResponse;
     }
 
-    public void postComment(String slugManga, String username, String text, String token) throws IOException, URISyntaxException, InterruptedException {
-        CRUDComment.postComment(slugManga, username, text, token);
+    public GetCommentResponse postComment(GetCommentRequest getCommentRequest, String token) throws IOException, URISyntaxException, InterruptedException {
+        GetCommentResponse getCommentResponse;
+        getCommentResponse = CRUDComment.postComment(getCommentRequest, token);
+        return getCommentResponse;
     }
 
-    public void updateComment(String slugManga, String username, String text, String token, int id) throws IOException, URISyntaxException, InterruptedException {
-        CRUDComment.updateComment(slugManga, username, text, token, id);
+    public GetCommentResponse updateComment(GetCommentRequest getCommentRequest,String token) throws IOException, URISyntaxException, InterruptedException {
+        GetCommentResponse getCommentResponse;
+        getCommentResponse = CRUDComment.updateComment(getCommentRequest, token);
+        return getCommentResponse;
     }
-    public void deleteComment(String slugManga,String token, int id) throws IOException, URISyntaxException, InterruptedException {
-        CRUDComment.deleteComment(slugManga, token, id);
+    public GetCommentResponse deleteComment(GetCommentRequest getCommentRequest,String token) throws IOException, URISyntaxException, InterruptedException {
+        GetCommentResponse getCommentResponse;
+        getCommentResponse = CRUDComment.deleteComment(getCommentRequest, token);
+        return getCommentResponse;
     }
 }

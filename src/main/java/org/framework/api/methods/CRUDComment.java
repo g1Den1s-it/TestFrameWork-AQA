@@ -1,6 +1,9 @@
 package org.framework.api.methods;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.framework.api.elements.comment.Comment;
+import org.framework.api.elements.comment.GetCommentRequest;
+import org.framework.api.elements.comment.GetCommentResponse;
 import org.testng.Assert;
 
 import java.io.IOException;
@@ -12,46 +15,78 @@ import java.net.http.HttpResponse;
 
 public class CRUDComment {
     private ObjectMapper objectMapper = new ObjectMapper();
-    public void postComment(String slugManga, String username, String text, String token) throws IOException, URISyntaxException, InterruptedException {
-        String jsonBody = "{\"author\":\"" + username + "\",\"manga\":\"" + slugManga + "\",\"body\":\"" + text + "\"}";
+    private Comment comment;
+    public GetCommentResponse postComment(GetCommentRequest getCommentRequest, String token) throws IOException, URISyntaxException, InterruptedException {
+        String jsonBody = "{\"author\":\"" + getCommentRequest.getComment().getAuthor() +
+                "\",\"manga\":\"" + getCommentRequest.getComment().getManga() +
+                "\",\"body\":\"" + getCommentRequest.getComment().getBody() + "\"}";
+
         HttpRequest httpRequest = HttpRequest.newBuilder()
                 .header("Content-Type", "application/json")
                 .header("Accept", "application/json")
                 .header("Authorization", "Bearer " + token)
                 .uri(new URL(
-                        "http://127.0.0.1:8000/manga/" + slugManga + "/comment/"
+                        "http://127.0.0.1:8000/manga/" + getCommentRequest.getComment().getManga() + "/comment/"
                 ).toURI())
                 .POST(HttpRequest.BodyPublishers.ofString(jsonBody)).build();
 
         HttpResponse httpResponse = HttpClient.newBuilder().build().send(httpRequest, HttpResponse.BodyHandlers.ofString());
         Assert.assertEquals(httpResponse.statusCode(), 201);
+
+        GetCommentResponse getCommentResponse = new GetCommentResponse();
+        getCommentResponse.setCodeStatus(httpResponse.statusCode());
+
+        comment = objectMapper.readValue(httpResponse.body()+ "", Comment.class);
+        System.out.println("Comment Response - " + httpResponse.body());
+
+        getCommentResponse.setComment(comment);
+        return getCommentResponse;
     }
 
-    public void updateComment(String slugManga, String username, String text, String token, int id) throws IOException, URISyntaxException, InterruptedException {
-        String jsonBody = "{\"author\":\"" + username + "\",\"manga\":\"" + slugManga + "\",\"body\":\"" + text + "\"}";
+    public GetCommentResponse updateComment(GetCommentRequest getCommentRequest, String token) throws IOException, URISyntaxException, InterruptedException {
+        String jsonBody = "{\"author\":\"" + getCommentRequest.getComment().getAuthor() +
+                "\",\"manga\":\"" + getCommentRequest.getComment().getManga() +
+                "\",\"body\":\"" + getCommentRequest.getComment().getBody() + "\"}";
+
         HttpRequest httpRequest = HttpRequest.newBuilder()
                 .header("Content-Type", "application/json")
                 .header("Accept", "application/json")
                 .header("Authorization", "Bearer " + token)
                 .uri(new URL(
-                        "http://127.0.0.1:8000/manga/" + slugManga + "/comment/" + id +"/"
+                        "http://127.0.0.1:8000/manga/" + getCommentRequest.getComment().getManga() +
+                                "/comment/" + getCommentRequest.getComment().getId() +"/"
                 ).toURI())
                 .PUT(HttpRequest.BodyPublishers.ofString(jsonBody)).build();
 
         HttpResponse httpResponse = HttpClient.newBuilder().build().send(httpRequest, HttpResponse.BodyHandlers.ofString());
         Assert.assertEquals(httpResponse.statusCode(), 205);
+
+        GetCommentResponse getCommentResponse = new GetCommentResponse();
+        getCommentResponse.setCodeStatus(httpResponse.statusCode());
+
+        comment = objectMapper.readValue(httpResponse.body()+ "", Comment.class);
+        System.out.println("Comment update Response - " + httpResponse.body());
+
+        getCommentResponse.setComment(comment);
+        return getCommentResponse;
     }
-    public void deleteComment(String slugManga,String token, int id) throws IOException, InterruptedException, URISyntaxException {
+    public GetCommentResponse deleteComment(GetCommentRequest getCommentRequest,String token) throws IOException, InterruptedException, URISyntaxException {
         HttpRequest httpRequest = HttpRequest.newBuilder()
                 .header("Content-Type", "application/json")
                 .header("Accept", "application/json")
                 .header("Authorization", "Bearer " + token)
                 .uri(new URL(
-                        "http://127.0.0.1:8000/manga/" + slugManga + "/comment/" + id +"/delete/"
+                        "http://127.0.0.1:8000/manga/" + getCommentRequest.getComment().getManga() +
+                                "/comment/" + getCommentRequest.getComment().getId() +"/delete/"
                 ).toURI())
                 .DELETE().build();
 
         HttpResponse httpResponse = HttpClient.newBuilder().build().send(httpRequest, HttpResponse.BodyHandlers.ofString());
         Assert.assertEquals(httpResponse.statusCode(), 204);
+
+        GetCommentResponse getCommentResponse = new GetCommentResponse();
+        getCommentResponse.setCodeStatus(httpResponse.statusCode());
+
+        return getCommentResponse;
     }
 }

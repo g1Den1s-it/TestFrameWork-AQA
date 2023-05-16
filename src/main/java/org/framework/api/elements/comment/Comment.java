@@ -1,10 +1,10 @@
-package org.framework.api.elements.manga;
+package org.framework.api.elements.comment;
 
 import lombok.Data;
 
 @Data
 public class Comment {
-    private Integer id;
+    private int id;
     private String author;
     private String body;
     private String manga;

@@ -1,6 +1,7 @@
 package org.framework.api.elements.manga;
 
 import lombok.Data;
+import org.framework.api.elements.comment.Comment;
 
 import java.util.List;
 

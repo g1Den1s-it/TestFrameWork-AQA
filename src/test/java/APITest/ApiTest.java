@@ -1,13 +1,15 @@
 package APITest;
 
-import org.framework.Listeners.AllureListener;
+
 import org.framework.api.bo.MangaBO;
+import org.framework.api.elements.comment.Comment;
+import org.framework.api.elements.comment.GetCommentRequest;
+import org.framework.api.elements.comment.GetCommentResponse;
 import org.framework.api.elements.manga.GetMangaResponse;
 import org.framework.api.elements.registration.RegistrationUserRequest;
 import org.framework.api.elements.registration.RegistrationUserResponse;
 import org.framework.api.elements.token.GetTokenResponse;
-import org.framework.api.methods.GetUserToken;
-import org.testng.annotations.Listeners;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -36,30 +38,41 @@ public class ApiTest {
         GetMangaResponse getMangaResponse;
         getMangaResponse = mangaBO.getMangaList();
 
-        //set commnet to this manga
+        //set comment to this manga
         String text = "Perfecto";
-        mangaBO.postComment(
-                getMangaResponse.getCardMangaList().get(1).getSlug(),
-                registrationUserResponse.getUser().getUsername(),
-                text,
-                getTokenResponse.getToken().getAccess()
-                );
+
+        Comment commentRequest = new Comment();
+        commentRequest.setAuthor(registrationUserResponse.getUser().getUsername());
+        commentRequest.setBody(text);
+        commentRequest.setManga(getMangaResponse.getCardMangaList().get(1).getSlug());
+
+        GetCommentRequest getCommentRequest = new GetCommentRequest();
+        getCommentRequest.setComment(commentRequest);
+        getCommentRequest.setCodeStatus(201);
+
+        GetCommentResponse getCommentResponse =  mangaBO.postComment(getCommentRequest, getTokenResponse.getToken().getAccess());
+        //tests
+        Assert.assertEquals(getCommentResponse.getCodeStatus(), getCommentRequest.getCodeStatus());
+        Assert.assertEquals(getCommentResponse.getComment().getAuthor(), getCommentRequest.getComment().getAuthor());
+        Assert.assertEquals(getCommentResponse.getComment().getManga(), getCommentRequest.getComment().getManga());
+        Assert.assertEquals(getCommentResponse.getComment().getBody(), getCommentRequest.getComment().getBody());
 
         //update
-        mangaBO.updateComment(
-                getMangaResponse.getCardMangaList().get(1).getSlug(),
-                registrationUserResponse.getUser().getUsername(),
-                text,
-                getTokenResponse.getToken().getAccess(),
-                11
-        );
+        getCommentRequest.setComment(getCommentResponse.getComment());
+        getCommentRequest.getComment().setBody("new text which i want to write");
+
+        mangaBO.updateComment(getCommentRequest, getTokenResponse.getToken().getAccess());
+        //tests
+        Assert.assertEquals(getCommentResponse.getCodeStatus(), getCommentRequest.getCodeStatus());
+        Assert.assertEquals(getCommentResponse.getComment().getAuthor(), getCommentRequest.getComment().getAuthor());
+        Assert.assertEquals(getCommentResponse.getComment().getManga(), getCommentRequest.getComment().getManga());
+        Assert.assertEquals(getCommentResponse.getComment().getBody(), getCommentRequest.getComment().getBody());
 
         //delete
-        mangaBO.deleteComment(
-                getMangaResponse.getCardMangaList().get(1).getSlug(),
-                getTokenResponse.getToken().getAccess(),
-                11
-        );
+
+        getCommentResponse = mangaBO.deleteComment(getCommentRequest, getTokenResponse.getToken().getAccess());
+        //tests
+        Assert.assertEquals(getCommentResponse.getCodeStatus(), 204);
     }
 
 }

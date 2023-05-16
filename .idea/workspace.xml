@@ -5,23 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef48178c-45c4-4d34-ba76-7bb8ecb5348b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/elements/manga/CardManga.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/elements/manga/Chapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/elements/manga/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/elements/manga/GetMangaResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/elements/manga/Manga.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/elements/registration/RegistrationUserRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/elements/registration/RegistrationUserResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/elements/registration/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/elements/token/GetTokenResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/elements/token/Token.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/methods/CRUDComment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/methods/GetListManga.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/methods/GetUserToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/APITest/ApiTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/elements/comment/GetCommentRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/elements/comment/GetCommentResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/framework/api/Spotify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/bo/MangaBO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/framework/api/methods/GetToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/methods/RegistrationUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/framework/Drivers/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/framework/Drivers/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/framework/api/bo/MangaBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/bo/MangaBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/framework/api/elements/manga/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/elements/comment/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/framework/api/elements/manga/Manga.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/elements/manga/Manga.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/framework/api/methods/CRUDComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/methods/CRUDComment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/APITest/ApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/APITest/ApiTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +46,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/den1s/java/TestFramework",
+    "last_opened_file_path": "/home/den1s/java/JavaHomeWork",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -131,8 +124,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.ApiTest.EndToEndApiTest" />
-        <item itemvalue="TestNG.ApiTest" />
         <item itemvalue="TestNG.WebTest" />
+        <item itemvalue="TestNG.ApiTest" />
       </list>
     </recent_temporary>
   </component>
@@ -155,7 +148,7 @@
       <workItem from="1684065409785" duration="617000" />
       <workItem from="1684070189490" duration="207000" />
       <workItem from="1684072149262" duration="7097000" />
-      <workItem from="1684231536379" duration="16903000" />
+      <workItem from="1684231536379" duration="29680000" />
     </task>
     <servers />
   </component>
