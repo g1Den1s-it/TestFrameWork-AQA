@@ -5,17 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef48178c-45c4-4d34-ba76-7bb8ecb5348b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/Listeners/AllureListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/Spotify.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/methods/GetToken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/elements/manga/CardManga.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/elements/manga/Chapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/elements/manga/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/elements/manga/GetMangaResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/elements/manga/Manga.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/elements/registration/RegistrationUserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/elements/registration/RegistrationUserResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/elements/registration/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/elements/token/GetTokenResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/elements/token/Token.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/methods/CRUDComment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/methods/GetListManga.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/methods/GetUserToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/APITest/ApiTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/framework/UI/bo/UserBo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/framework/UI/bo/UserBo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/framework/UI/po/HomePageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/framework/UI/po/HomePageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/framework/UI/wrappers/Element.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/framework/UI/wrappers/Element.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UITest/WebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UITest/WebTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/framework/api/Spotify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/bo/MangaBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/framework/api/methods/GetToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/methods/RegistrationUser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +53,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/den1s/java/JavaHomeWork",
+    "last_opened_file_path": "/home/den1s/java/TestFramework",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -61,13 +67,50 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.framework.api.elements.token" />
+      <recent name="org.framework.api.elements.registration" />
       <recent name="org.framework.Drivers" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/drivers" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.ApiTest.EndToEndApiTest">
+    <configuration name="ApiTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="APITest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="APITest" />
+      <option name="MAIN_CLASS_NAME" value="APITest.ApiTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTest.EndToEndApiTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="APITest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="APITest" />
+      <option name="MAIN_CLASS_NAME" value="APITest.ApiTest" />
+      <option name="METHOD_NAME" value="EndToEndApiTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WebTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestFramework" />
       <extension name="coverage">
@@ -87,6 +130,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ApiTest.EndToEndApiTest" />
+        <item itemvalue="TestNG.ApiTest" />
         <item itemvalue="TestNG.WebTest" />
       </list>
     </recent_temporary>
@@ -109,7 +154,8 @@
       <workItem from="1684052310593" duration="907000" />
       <workItem from="1684065409785" duration="617000" />
       <workItem from="1684070189490" duration="207000" />
-      <workItem from="1684072149262" duration="6287000" />
+      <workItem from="1684072149262" duration="7097000" />
+      <workItem from="1684231536379" duration="16903000" />
     </task>
     <servers />
   </component>
