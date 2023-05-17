@@ -1,5 +1,7 @@
 package org.framework.hibernate;
 
+import org.framework.hibernate.entities.Comment;
+import org.framework.hibernate.entities.RandomUser;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
@@ -20,14 +22,12 @@ public class HibernateUtil {
             hibernateProps.put(Environment.DIALECT, "org.hibernate.dialect.PostgreSQLDialect");
             hibernateProps.put(Environment.SHOW_SQL, "true");
             hibernateProps.put(Environment.CURRENT_SESSION_CONTEXT_CLASS, "thread");
-            hibernateProps.put(Environment.HBM2DDL_AUTO, "create");
-            // Build the configuration object and register entity classes
+            //hibernateProps.put(Environment.HBM2DDL_AUTO, "create");
+            //Build the configuration object and register entity classes
             Configuration configuration = new Configuration();
             configuration.setProperties(hibernateProps);
-//            configuration.addAnnotatedClass(Event.class);
-//            configuration.addAnnotatedClass(Guests.class);
-//            configuration.addAnnotatedClass(Adress.class);
-//            configuration.addAnnotatedClass(SocialMedia.class);
+            configuration.addAnnotatedClass(RandomUser.class);
+            configuration.addAnnotatedClass(Comment.class);
 
             // Build the ServiceRegistry and create the SessionFactory
             ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()

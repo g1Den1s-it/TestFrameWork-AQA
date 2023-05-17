@@ -5,16 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef48178c-45c4-4d34-ba76-7bb8ecb5348b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/elements/comment/GetCommentRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/elements/comment/GetCommentResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/hibernate/Generator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/hibernate/Hibernate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/hibernate/UserAndComments.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/hibernate/entities/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/hibernate/entities/RandomUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/validateTest/dataProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/framework/Drivers/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/framework/Drivers/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/framework/api/bo/MangaBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/bo/MangaBO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/framework/api/elements/manga/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/elements/comment/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/framework/api/elements/manga/Manga.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/elements/manga/Manga.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/framework/api/methods/CRUDComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/framework/api/methods/CRUDComment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/APITest/ApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/APITest/ApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/framework/hibernate/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/framework/hibernate/HibernateUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +55,11 @@
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -68,20 +72,29 @@
       <recent name="$PROJECT_DIR$/drivers" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ApiTest.EndToEndApiTest">
-    <configuration name="ApiTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.dataProvider">
+    <configuration name="Hibernate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.framework.hibernate.Hibernate" />
       <module name="TestFramework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="APITest.*" />
+          <option name="PATTERN" value="org.framework.hibernate.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="APITest" />
-      <option name="MAIN_CLASS_NAME" value="APITest.ApiTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HibernateTEST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.framework.hibernate.HibernateTEST" />
+      <module name="TestFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.framework.hibernate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -121,11 +134,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="dataProvider" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="validateTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="validateTest" />
+      <option name="MAIN_CLASS_NAME" value="validateTest.dataProvider" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.dataProvider" />
+        <item itemvalue="Application.Hibernate" />
+        <item itemvalue="Application.HibernateTEST" />
         <item itemvalue="TestNG.ApiTest.EndToEndApiTest" />
         <item itemvalue="TestNG.WebTest" />
-        <item itemvalue="TestNG.ApiTest" />
       </list>
     </recent_temporary>
   </component>
@@ -148,7 +180,9 @@
       <workItem from="1684065409785" duration="617000" />
       <workItem from="1684070189490" duration="207000" />
       <workItem from="1684072149262" duration="7097000" />
-      <workItem from="1684231536379" duration="29680000" />
+      <workItem from="1684231536379" duration="31005000" />
+      <workItem from="1684305442941" duration="14236000" />
+      <workItem from="1684331474785" duration="20422000" />
     </task>
     <servers />
   </component>
