@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.math.BigInteger;
 
 @Data
 @Entity
@@ -13,7 +14,7 @@ import javax.persistence.*;
 public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private BigInteger id;
     @Column(name = "manga")
     private String manga;
     @Column(name = "author")

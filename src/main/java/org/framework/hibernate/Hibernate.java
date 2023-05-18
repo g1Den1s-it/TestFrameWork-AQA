@@ -57,31 +57,35 @@ public class Hibernate {
         UserAndComments userAndComments = new UserAndComments();
         //get user fields
         Query userQuery = session.createNativeQuery("SELECT id, username, email, password, is_valid FROM random_user");
-        List<Object[]> result = userQuery.getResultList();
+        List<Object[]> UserResult = userQuery.getResultList();
         List<RandomUser> randomUsersList = new ArrayList<>();
-        for (Object[] row : result) {
-            BigInteger id = (BigInteger) row[0];
-            String username = (String) row[1];
-            String email = (String) row[2];
-            String password = (String) row[3];
-            Boolean isValid = (Boolean) row[4];
+        for (Object[] row : UserResult) {
 
             RandomUser randomUser = new RandomUser();
-            randomUser.setId(id);
-            randomUser.setUsername(username);
-            randomUser.setEmail(email);
-            randomUser.setPassword(password);
-            randomUser.setIsValid(isValid);
+            randomUser.setId((BigInteger) row[0]);
+            randomUser.setUsername((String) row[1]);
+            randomUser.setEmail((String) row[2]);
+            randomUser.setPassword((String) row[3]);
 
             randomUsersList.add(randomUser);
         }
 
-
-
         userAndComments.setRandomUserList(randomUsersList);
+
+
         //get comment fields
         Query commentQuery = session.createNativeQuery("SELECT id, manga, author, body, is_valid FROM comment");
-        List<Comment> commentList = commentQuery.getResultList();
+        List<Object[]> commentResult = commentQuery.getResultList();
+        List<Comment> commentList = new ArrayList<>();
+        for(Object[] row : commentResult){
+            Comment comment = new Comment();
+            comment.setId((BigInteger) row[0]);
+            comment.setManga((String) row[1]);
+            comment.setAuthor((String) row[2]);
+            comment.setBody((String) row[3]);
+
+            commentList.add(comment);
+        }
         userAndComments.setCommentList(commentList);
 
         session.getTransaction().commit();

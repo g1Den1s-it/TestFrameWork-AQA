@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef48178c-45c4-4d34-ba76-7bb8ecb5348b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/hibernate/Generator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/hibernate/Hibernate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/hibernate/UserAndComments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/hibernate/entities/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/hibernate/entities/RandomUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/validateTest/dataProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/framework/hibernate/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/framework/hibernate/HibernateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/framework/hibernate/Hibernate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/framework/hibernate/Hibernate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/framework/hibernate/entities/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/framework/hibernate/entities/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/validateTest/dataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/validateTest/dataProvider.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +41,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/den1s/java/JavaHomeWork",
+    "last_opened_file_path": "/home/den1s/java/TestFramework",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -182,7 +178,8 @@
       <workItem from="1684072149262" duration="7097000" />
       <workItem from="1684231536379" duration="31005000" />
       <workItem from="1684305442941" duration="14236000" />
-      <workItem from="1684331474785" duration="20422000" />
+      <workItem from="1684331474785" duration="21121000" />
+      <workItem from="1684400628786" duration="2847000" />
     </task>
     <servers />
   </component>
