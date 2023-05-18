@@ -5,11 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef48178c-45c4-4d34-ba76-7bb8ecb5348b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/desktop/bo/SpotifyBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/desktop/po/LinuxPO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/desktop/po/SpotifyPO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/desktop/screenShots/add_playlist.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/desktop/screenShots/applicationsSearch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/desktop/screenShots/create_playlist.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/desktop/screenShots/delete_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/desktop/screenShots/delete_list.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/desktop/screenShots/exit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/desktop/screenShots/like.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/desktop/screenShots/music.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/desktop/screenShots/playlist.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/desktop/screenShots/playlist_title.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/desktop/screenShots/search_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/desktop/screenShots/search_input.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/desktop/screenShots/showApplications.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/desktop/wrapper/ElementPattern.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/desktop/wrapper/ScreenHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/desktopTest/DeskTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/framework/hibernate/Hibernate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/framework/hibernate/Hibernate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/framework/hibernate/entities/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/framework/hibernate/entities/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/validateTest/dataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/validateTest/dataProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/APITest/ApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/APITest/ApiTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,33 +87,7 @@
       <recent name="$PROJECT_DIR$/drivers" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.dataProvider">
-    <configuration name="Hibernate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.framework.hibernate.Hibernate" />
-      <module name="TestFramework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.framework.hibernate.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HibernateTEST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.framework.hibernate.HibernateTEST" />
-      <module name="TestFramework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.framework.hibernate.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.DeskTest">
     <configuration name="ApiTest.EndToEndApiTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestFramework" />
       <extension name="coverage">
@@ -113,7 +106,60 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="DeskTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="desktopTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="desktopTest" />
+      <option name="MAIN_CLASS_NAME" value="desktopTest.DeskTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeskTest.createPlaylistTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="desktopTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="desktopTest" />
+      <option name="MAIN_CLASS_NAME" value="desktopTest.DeskTest" />
+      <option name="METHOD_NAME" value="createPlaylistTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeskTest.deskTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="desktopTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="desktopTest" />
+      <option name="MAIN_CLASS_NAME" value="desktopTest.DeskTest" />
+      <option name="METHOD_NAME" value="deskTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebTest.EndToEnd" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestFramework" />
       <extension name="coverage">
         <pattern>
@@ -123,24 +169,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="UITest" />
       <option name="MAIN_CLASS_NAME" value="UITest.WebTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="dataProvider" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TestFramework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="validateTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="validateTest" />
-      <option name="MAIN_CLASS_NAME" value="validateTest.dataProvider" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="METHOD_NAME" value="EndToEnd" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -149,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.dataProvider" />
-        <item itemvalue="Application.Hibernate" />
-        <item itemvalue="Application.HibernateTEST" />
+        <item itemvalue="TestNG.DeskTest" />
+        <item itemvalue="TestNG.DeskTest.createPlaylistTest" />
+        <item itemvalue="TestNG.DeskTest.deskTest" />
         <item itemvalue="TestNG.ApiTest.EndToEndApiTest" />
-        <item itemvalue="TestNG.WebTest" />
+        <item itemvalue="TestNG.WebTest.EndToEnd" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +209,7 @@
       <workItem from="1684231536379" duration="31005000" />
       <workItem from="1684305442941" duration="14236000" />
       <workItem from="1684331474785" duration="21121000" />
-      <workItem from="1684400628786" duration="2847000" />
+      <workItem from="1684400628786" duration="28667000" />
     </task>
     <servers />
   </component>

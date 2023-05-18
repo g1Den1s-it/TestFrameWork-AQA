@@ -44,7 +44,7 @@ public class ApiTest {
         Comment commentRequest = new Comment();
         commentRequest.setAuthor(registrationUserResponse.getUser().getUsername());
         commentRequest.setBody(text);
-        commentRequest.setManga(getMangaResponse.getCardMangaList().get(1).getSlug());
+        commentRequest.setManga(getMangaResponse.getCardMangaList().get(0).getSlug());
 
         GetCommentRequest getCommentRequest = new GetCommentRequest();
         getCommentRequest.setComment(commentRequest);
