@@ -1,6 +1,5 @@
 package UITest;
 
-
 import org.framework.Drivers.DriverHelper;
 import org.framework.Listeners.AllureListener;
 import org.framework.UI.bo.LoginBO;
@@ -12,25 +11,23 @@ import org.testng.annotations.Test;
 
 
 @Listeners({AllureListener.class})
-public class WebTest {
-
+public class StepTwoAddMusicLike {
     @BeforeTest
     public void setup(){
         DriverHelper.setup("chrome");
     }//firefox doesn't work
 
     @Test
-    void EndToEnd() throws InterruptedException {
+    void addPlaylistTest() throws InterruptedException {
         LoginBO loginBO = new LoginBO();
         loginBO.SingIn();
 
+        Thread.sleep(5000);
         UserBo userBo = new UserBo();
-        userBo.getPlaylistAndAddMusic();
+        userBo.addMusicLike("Whispers in the Dark");
     }
-
     @AfterTest
     public void finish(){
         DriverHelper.exit();
     }
-
 }

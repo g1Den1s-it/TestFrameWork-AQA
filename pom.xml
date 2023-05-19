@@ -10,9 +10,29 @@
   <dependencies>
     <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
     <dependency>
-      <groupId>org.seleniumhq.selenium</groupId>
-      <artifactId>selenium-java</artifactId>
-      <version>4.9.0</version>
+      <groupId>org.json</groupId>
+      <artifactId>json</artifactId>
+      <version>20230227</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-xml -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.dataformat</groupId>
+      <artifactId>jackson-dataformat-xml</artifactId>
+      <version>2.14.2</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.26</version>
+      <scope>provided</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/io.kubernetes/client-java -->
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>5.3.20.Final</version>
     </dependency>
     <!-- https://mvnrepository.com/artifact/org.testng/testng -->
     <dependency>
@@ -21,38 +41,41 @@
       <version>7.7.1</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.28</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>4.9.0</version>
+    </dependency>
     <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
     <dependency>
       <groupId>io.github.bonigarcia</groupId>
       <artifactId>webdrivermanager</artifactId>
       <version>5.3.2</version>
     </dependency>
-      <dependency>
-          <groupId>org.testng</groupId>
-          <artifactId>testng</artifactId>
-          <version>7.7.1</version>
-          <scope>compile</scope>
-      </dependency>
+    <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
     <dependency>
       <groupId>org.postgresql</groupId>
       <artifactId>postgresql</artifactId>
       <version>42.6.0</version>
     </dependency>
     <dependency>
-      <groupId>org.json</groupId>
-      <artifactId>json</artifactId>
-      <version>20230227</version>
+      <groupId>io.rest-assured</groupId>
+      <artifactId>rest-assured</artifactId>
+      <version>5.0.1</version>
     </dependency>
+
+    <!-- https://mvnrepository.com/artifact/log4j/log4j -->
     <dependency>
-      <groupId>org.hibernate</groupId>
-      <artifactId>hibernate-core</artifactId>
-      <version>5.3.20.Final</version>
-    </dependency>
-    <dependency>
-      <groupId>org.projectlombok</groupId>
-      <artifactId>lombok</artifactId>
-      <version>1.18.26</version>
-      <scope>provided</scope>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>1.2.17</version>
     </dependency>
     <dependency>
       <groupId>com.automation-remarks</groupId>
@@ -73,11 +96,16 @@
       <scope>runtime</scope>
     </dependency>
     <dependency>
-      <groupId>com.sikulix</groupId>
-      <artifactId>sikulixapi</artifactId>
-      <version>2.0.5</version>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>7.7.1</version>
+      <scope>compile</scope>
     </dependency>
-
+<!--    <dependency>-->
+<!--      <groupId>com.sikulix</groupId>-->
+<!--      <artifactId>sikulixapi</artifactId>-->
+<!--      <version>2.0.5</version>-->
+<!--    </dependency>-->
   </dependencies>
   <build>
     <plugins>
@@ -92,3 +120,77 @@
     </plugins>
   </build>
 </project>
+<!--&lt;!&ndash;-->
+<!-- <dependency>-->
+<!--      <groupId>org.seleniumhq.selenium</groupId>-->
+<!--      <artifactId>selenium-java</artifactId>-->
+<!--      <version>4.9.1</version>-->
+<!--    </dependency>-->
+<!--    &lt;!&ndash; https://mvnrepository.com/artifact/org.testng/testng &ndash;&gt;-->
+<!--<dependency>-->
+<!--<groupId>org.testng</groupId>-->
+<!--<artifactId>testng</artifactId>-->
+<!--<version>7.7.1</version>-->
+<!--<scope>test</scope>-->
+<!--</dependency>-->
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager &ndash;&gt;-->
+<!--<dependency>-->
+<!--<groupId>io.github.bonigarcia</groupId>-->
+<!--<artifactId>webdrivermanager</artifactId>-->
+<!--<version>5.3.2</version>-->
+<!--</dependency>-->
+<!--<dependency>-->
+<!--<groupId>org.testng</groupId>-->
+<!--<artifactId>testng</artifactId>-->
+<!--<version>7.7.1</version>-->
+<!--<scope>compile</scope>-->
+<!--</dependency>-->
+<!--<dependency>-->
+<!--<groupId>org.postgresql</groupId>-->
+<!--<artifactId>postgresql</artifactId>-->
+<!--<version>42.6.0</version>-->
+<!--</dependency>-->
+<!--<dependency>-->
+<!--<groupId>org.json</groupId>-->
+<!--<artifactId>json</artifactId>-->
+<!--<version>20230227</version>-->
+<!--</dependency>-->
+<!--<dependency>-->
+<!--<groupId>org.hibernate</groupId>-->
+<!--<artifactId>hibernate-core</artifactId>-->
+<!--<version>5.3.20.Final</version>-->
+<!--</dependency>-->
+<!--<dependency>-->
+<!--<groupId>org.projectlombok</groupId>-->
+<!--<artifactId>lombok</artifactId>-->
+<!--<version>1.18.26</version>-->
+<!--<scope>provided</scope>-->
+<!--</dependency>-->
+<!--<dependency>-->
+<!--<groupId>com.automation-remarks</groupId>-->
+<!--<artifactId>video-recorder-testng</artifactId>-->
+<!--<version>LATEST</version>-->
+<!--</dependency>-->
+<!--<dependency>-->
+<!--<groupId>io.qameta.allure</groupId>-->
+<!--<artifactId>allure-testng</artifactId>-->
+<!--<version>2.17.3</version>-->
+<!--</dependency>-->
+
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.aspectj/aspectjweaver &ndash;&gt;-->
+<!--<dependency>-->
+<!--<groupId>org.aspectj</groupId>-->
+<!--<artifactId>aspectjweaver</artifactId>-->
+<!--<version>1.9.19</version>-->
+<!--<scope>runtime</scope>-->
+<!--</dependency>-->
+<!--<dependency>-->
+<!--<groupId>com.sikulix</groupId>-->
+<!--<artifactId>sikulixapi</artifactId>-->
+<!--<version>2.0.5</version>-->
+<!--</dependency>-->
+<!--<dependency>-->
+<!--<groupId>log4j</groupId>-->
+<!--<artifactId>log4j</artifactId>-->
+<!--<version>1.2.17</version>-->
+<!--</dependency>-->

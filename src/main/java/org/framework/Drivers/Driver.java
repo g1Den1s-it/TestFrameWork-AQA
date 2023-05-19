@@ -5,8 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import java.util.HashMap;
-import java.util.Map;
 
 public class Driver {
     private static WebDriver driver;
@@ -25,6 +23,7 @@ public class Driver {
     }
 
     public WebDriver getChromeDriver(){
+        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
         ChromeDriverManager.getInstance().setup();
         driver = new ChromeDriver();
         System.out.println("Chrome start");
@@ -32,6 +31,7 @@ public class Driver {
     }
 
     public WebDriver getFirefox(){
+        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
         ChromeDriverManager.getInstance().setup();
         driver = new FirefoxDriver();
         System.out.println("Firefox start");

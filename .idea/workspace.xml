@@ -1,34 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef48178c-45c4-4d34-ba76-7bb8ecb5348b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/desktop/bo/SpotifyBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/desktop/po/LinuxPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/desktop/po/SpotifyPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/desktop/screenShots/add_playlist.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/desktop/screenShots/applicationsSearch.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/desktop/screenShots/create_playlist.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/desktop/screenShots/delete_button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/desktop/screenShots/delete_list.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/desktop/screenShots/exit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/desktop/screenShots/like.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/desktop/screenShots/music.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/desktop/screenShots/playlist.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/desktop/screenShots/playlist_title.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/desktop/screenShots/search_button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/desktop/screenShots/search_input.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/desktop/screenShots/showApplications.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/desktop/wrapper/ElementPattern.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/framework/desktop/wrapper/ScreenHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/desktopTest/DeskTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/APITest/ApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/APITest/ApiTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +22,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/jenkins/secret.key.not-so-secret" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -58,9 +38,11 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/den1s/java/TestFramework",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "/home/den1s/java/JavaHomeWork",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -87,35 +69,17 @@
       <recent name="$PROJECT_DIR$/drivers" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.DeskTest">
-    <configuration name="ApiTest.EndToEndApiTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.StepThreeDeleteMusicLike.addPlaylistTest">
+    <configuration name="StepThreeDeleteMusicLike" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestFramework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="APITest.*" />
+          <option name="PATTERN" value="UITest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="APITest" />
-      <option name="MAIN_CLASS_NAME" value="APITest.ApiTest" />
-      <option name="METHOD_NAME" value="EndToEndApiTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DeskTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TestFramework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="desktopTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="desktopTest" />
-      <option name="MAIN_CLASS_NAME" value="desktopTest.DeskTest" />
+      <option name="PACKAGE_NAME" value="UITest" />
+      <option name="MAIN_CLASS_NAME" value="UITest.StepThreeDeleteMusicLike" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -123,17 +87,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DeskTest.createPlaylistTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="StepThreeDeleteMusicLike.addPlaylistTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestFramework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="desktopTest.*" />
+          <option name="PATTERN" value="UITest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="desktopTest" />
-      <option name="MAIN_CLASS_NAME" value="desktopTest.DeskTest" />
-      <option name="METHOD_NAME" value="createPlaylistTest" />
+      <option name="PACKAGE_NAME" value="UITest" />
+      <option name="MAIN_CLASS_NAME" value="UITest.StepThreeDeleteMusicLike" />
+      <option name="METHOD_NAME" value="addPlaylistTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -141,25 +105,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DeskTest.deskTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="StepTwoAddMusicLike" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestFramework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="desktopTest.*" />
+          <option name="PATTERN" value="UITest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="desktopTest" />
-      <option name="MAIN_CLASS_NAME" value="desktopTest.DeskTest" />
-      <option name="METHOD_NAME" value="deskTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PACKAGE_NAME" value="UITest" />
+      <option name="MAIN_CLASS_NAME" value="UITest.StepTwoAddMusicLike" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebTest.EndToEnd" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="WebTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestFramework" />
       <extension name="coverage">
         <pattern>
@@ -169,7 +132,24 @@
       </extension>
       <option name="PACKAGE_NAME" value="UITest" />
       <option name="MAIN_CLASS_NAME" value="UITest.WebTest" />
-      <option name="METHOD_NAME" value="EndToEnd" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebTest.addPlaylistTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UITest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="UITest" />
+      <option name="MAIN_CLASS_NAME" value="UITest.WebTest" />
+      <option name="METHOD_NAME" value="addPlaylistTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -179,11 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.DeskTest" />
-        <item itemvalue="TestNG.DeskTest.createPlaylistTest" />
-        <item itemvalue="TestNG.DeskTest.deskTest" />
-        <item itemvalue="TestNG.ApiTest.EndToEndApiTest" />
-        <item itemvalue="TestNG.WebTest.EndToEnd" />
+        <item itemvalue="TestNG.StepThreeDeleteMusicLike.addPlaylistTest" />
+        <item itemvalue="TestNG.StepThreeDeleteMusicLike" />
+        <item itemvalue="TestNG.StepTwoAddMusicLike" />
+        <item itemvalue="TestNG.WebTest.addPlaylistTest" />
+        <item itemvalue="TestNG.WebTest" />
       </list>
     </recent_temporary>
   </component>
@@ -209,11 +189,25 @@
       <workItem from="1684231536379" duration="31005000" />
       <workItem from="1684305442941" duration="14236000" />
       <workItem from="1684331474785" duration="21121000" />
-      <workItem from="1684400628786" duration="28667000" />
+      <workItem from="1684400628786" duration="31420000" />
+      <workItem from="1684496296824" duration="4268000" />
+      <workItem from="1684506322293" duration="486000" />
+      <workItem from="1684506963966" duration="11354000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

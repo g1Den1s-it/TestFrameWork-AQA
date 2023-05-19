@@ -2,6 +2,8 @@ package org.framework.UI.po;
 
 import org.framework.UI.wrappers.Decorator;
 import org.framework.UI.wrappers.Element;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -34,13 +36,20 @@ public class HomePageObject {
     private Element profileButton;
     @FindBy(xpath = "//div[@class=\"RP2rRchy4i8TIp1CTmb7\"]")
     private Element likesSongsDiv;
+    @FindBy(xpath = "//button[@class=\"RbsCNNM9a0WkFCM2UzBA control-button control-button-heart SPC4uzYXJmknkCGKpxHw\"]")
+    private Element unLike;
+    @FindBy(xpath = "//div[text()=\"Whispers in the Dark\"]/../../../..")
+    private Element currentMusic;
+    @FindBy(xpath = "//button[@class=\"onetrust-close-btn-handler onetrust-close-btn-ui banner-close-button ot-close-icon\"]")
+    private Element cookies;
+
 
     public HomePageObject() {
+        PageFactory.initElements(new Decorator(driver), this);
         if (!URL.equals(driver.getCurrentUrl())){
             driver.get(URL);
             driver.manage().window().maximize();
         }
-        PageFactory.initElements(new Decorator(driver), this);
     }
     public void SingIn(){
         signInButton.getWebElement().click();
@@ -68,5 +77,14 @@ public class HomePageObject {
     }
     public boolean isLikesSongs(){
         return likesSongsDiv.getWebElementAndWait().isDisplayed();
+    }
+
+    public void deleteMusic(String s) {
+        currentMusic.getWebElementAndWait().click();
+
+        currentMusic.getWebElement().click();
+        cookies.getWebElement().click();
+
+        unLike.getWebElementAndWaitBeClickable().click();
     }
 }
